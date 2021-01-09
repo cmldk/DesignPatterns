@@ -24,5 +24,6 @@ public class TestWaitress {
 
         Waitress w = new Waitress(topMenu);
         w.printMenu();
+        w.printVegetarianItems();
     }
 }

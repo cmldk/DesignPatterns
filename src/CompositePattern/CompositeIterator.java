@@ -22,11 +22,20 @@ public class CompositeIterator implements Iterator {
         }else {
             return true;
         }
-        return true;
     }
 
     @Override
     public Object next() {
-        return null;
+        if (hasNext()) {
+            Iterator itr = (Iterator) stack.peek();
+            MenuComponent mc = (MenuComponent) itr.next();
+            if (mc instanceof Menu) {
+                stack.push(mc.createIterator());
+            }
+            return mc;
+
+        }else {
+            return null;
+        }
     }
 }
