@@ -23,6 +23,7 @@ public class GumballMachine {
         hasQuarterState = new HasQuarterState(this);
         soldState = new SoldState(this);
         soldOutState = new SoldOutState(this);
+        winnerState = new WinnerState(this);
 
         this.count = count;
         if (count > 0) {

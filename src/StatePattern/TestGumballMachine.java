@@ -10,14 +10,11 @@ public class TestGumballMachine {
         gm.insertQuarter();
         gm.ejectQuarter();
 
-        gm.insertQuarter();
-        gm.turnCrank();
+        for (int i=0; i<20; i++){
 
-        gm.insertQuarter();
-        gm.turnCrank();
-
-        gm.insertQuarter();
-        gm.turnCrank();
+            gm.insertQuarter();
+            gm.turnCrank();
+        }
 
         gm.insertQuarter();
     }
