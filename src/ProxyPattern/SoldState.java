@@ -1,8 +1,10 @@
 package ProxyPattern;
 
+import java.io.Serializable;
+
 public class SoldState implements State {
 
-    GumballMachine gm;
+    transient GumballMachine gm; //will not be serialized, will not be transfered
 
     public SoldState(GumballMachine gumballMachine) {
         gm = gumballMachine;

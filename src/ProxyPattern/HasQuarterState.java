@@ -3,9 +3,9 @@ package ProxyPattern;
 import java.util.Random;
 
 public class HasQuarterState implements State {
-    GumballMachine gm;
+    transient GumballMachine gm;
 
-    Random random = new Random(System.currentTimeMillis());
+    transient Random random = new Random(System.currentTimeMillis());
 
     public HasQuarterState(GumballMachine gumballMachine) {
         gm = gumballMachine;

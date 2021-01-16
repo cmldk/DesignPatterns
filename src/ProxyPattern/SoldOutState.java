@@ -2,7 +2,7 @@ package ProxyPattern;
 
 public class SoldOutState implements State {
 
-    GumballMachine gm;
+    transient GumballMachine gm;
 
     public SoldOutState(GumballMachine gumballMachine) {
         gm = gumballMachine;

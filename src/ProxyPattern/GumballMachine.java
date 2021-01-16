@@ -1,6 +1,6 @@
 package ProxyPattern;
 
-public class GumballMachine {
+public class GumballMachine implements GumballMachineRemote{
 
     /*
     final static int SOLD_OUT = 0;

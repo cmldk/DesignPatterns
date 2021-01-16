@@ -1,7 +1,7 @@
 package ProxyPattern;
 
 public class NoQuarterState implements State {
-    GumballMachine gm;
+    transient GumballMachine gm;
 
     public NoQuarterState(GumballMachine gumballMachine) {
         gm = gumballMachine;

@@ -1,7 +1,7 @@
 package ProxyPattern;
 
 public class WinnerState implements State {
-    GumballMachine gm;
+    transient GumballMachine gm;
 
     public WinnerState(GumballMachine gumballMachine) {
         gm = gumballMachine;
