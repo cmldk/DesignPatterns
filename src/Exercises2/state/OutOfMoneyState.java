@@ -9,18 +9,18 @@ public class OutOfMoneyState implements State {
 
     @Override
     public void insertCard(String cardnumber) {
-        System.out.println("Card has already inserted");
+        System.out.println("Out of Service");
     }
 
     @Override
     public void ejectCard() {
-        atmMachine.setState(atmMachine.noCardState);
+        atmMachine.setState(atmMachine.outOfMoneyState);
         System.out.println("Have a nice day");
     }
 
     @Override
     public void insertPin(String pin) {
-        System.out.println("Pin has already inserted");
+        System.out.println("Out of Service");
     }
 
     @Override
