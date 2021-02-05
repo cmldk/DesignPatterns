@@ -34,6 +34,10 @@ public class HasCorrectPinState implements State {
         }else {
             atmMachine.setCurrentAmount(atmMachine.getCurrentAmount() - amount);
             System.out.println("Given Cash Amount: " + amount);
+            if (atmMachine.getCurrentAmount() == 0){
+                atmMachine.setState(atmMachine.outOfMoneyState);
+                System.out.println("There is no money in ATM, Out of Service");
+            }
         }
 
     }

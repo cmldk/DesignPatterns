@@ -21,10 +21,12 @@ public class ItemRepository {
             if (inner_position >= items[position].length) {
                 position++;
                 inner_position = 0;
+
+                if(position >= items.length){
+                    return false;
+                }
             }
-            if(position >= items.length){
-                return false;
-            }
+
             return true;
         }
 

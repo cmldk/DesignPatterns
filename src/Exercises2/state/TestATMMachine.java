@@ -21,6 +21,9 @@ public class TestATMMachine {
         machine2.requestCash(1000);
         machine2.ejectCard();
 
+        System.out.println("\n");
+        machine2.insertCard("cardnumber3");
+        machine2.ejectCard();
 
     }
 }

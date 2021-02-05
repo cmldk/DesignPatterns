@@ -8,6 +8,9 @@ public class TestSingleton {
         (new MyThread()).start();
         (new Thread(new MyRunnable())).start();
 
+        System.out.println(s1);
+        System.out.println(s2);
+
     }
 
     static class MyThread extends Thread{
